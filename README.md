@@ -1,6 +1,6 @@
-# Plantilla del README del proyecto
+# Plantilla del README del proyecto 2610
 
-# Nombre del Proyecto
+# Nombre de la Aplicación
 
 ## Descripción
 Breve descripción del sistema de software, el problema que busca solucionar y el contexto general del proyecto.
@@ -111,6 +111,7 @@ docker-compose run ai-model pytest
 ## Contexto Académico
 - **Asignatura:** Fundamentos de Ingeniería de Software
 - **Docente:** Luis Gabriel Moreno Sandoval, PhD
+- **Contacto:** morenoluis@javeriana.edu.co
 
 ---
 
