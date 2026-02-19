@@ -1,6 +1,6 @@
 # Plantilla del README del proyecto 2610
 
-# Nombre del Proyecto
+# Nombre de la Aplicación
 
 ## Descripción
 Breve descripción del sistema de software, el problema que busca solucionar y el contexto general del proyecto.
