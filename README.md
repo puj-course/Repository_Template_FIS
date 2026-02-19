@@ -1,4 +1,4 @@
-# Plantilla del README del proyecto
+# Plantilla del README del proyecto 2610
 
 # Nombre del Proyecto
 
@@ -111,6 +111,7 @@ docker-compose run ai-model pytest
 ## Contexto Académico
 - **Asignatura:** Fundamentos de Ingeniería de Software
 - **Docente:** Luis Gabriel Moreno Sandoval, PhD
+- **Contacto:** morenoluis@javeriana.edu.co
 
 ---
 
