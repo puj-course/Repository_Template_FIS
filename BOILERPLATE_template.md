@@ -115,4 +115,3 @@ Carpeta para archivos temporales.
 - `Dockerfile`: Archivo para construir la imagen Docker del proyecto.
 - `docker-compose.yml`: Archivo de configuración para Docker Compose.
 - `Makefile`: Archivo para automatizar tareas mediante comandos `make`.
-
