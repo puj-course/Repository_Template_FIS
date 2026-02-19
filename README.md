@@ -111,6 +111,7 @@ docker-compose run ai-model pytest
 ## Contexto Académico
 - **Asignatura:** Fundamentos de Ingeniería de Software
 - **Docente:** Luis Gabriel Moreno Sandoval, PhD
+- **Contacto:** morenoluis@javeriana.edu.co
 
 ---
 
