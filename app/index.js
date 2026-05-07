@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
                 body {
                     margin: 0;
                     font-family: Arial, Helvetica, sans-serif;
-                    background: linear-gradient(135deg, #e3f2fd, #ffffff);
+                    background: linear-gradient(135deg, #dbeafe, #eff6ff, #ffffff);
                     color: #1f2937;
                     display: flex;
                     justify-content: center;
@@ -25,48 +25,58 @@ app.get("/", (req, res) => {
                 }
 
                 .card {
-                    background: white;
-                    padding: 40px;
-                    border-radius: 18px;
-                    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
-                    max-width: 650px;
+                    background: rgba(255, 255, 255, 0.95);
+                    padding: 48px 42px;
+                    border-radius: 24px;
+                    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.16);
+                    max-width: 680px;
                     text-align: center;
+                    border: 1px solid #e2e8f0;
                 }
 
                 .badge {
                     display: inline-block;
-                    background: #e0f2fe;
-                    color: #0369a1;
-                    padding: 8px 14px;
+                    background: #dbeafe;
+                    color: #1d4ed8;
+                    padding: 9px 18px;
                     border-radius: 999px;
                     font-size: 14px;
                     font-weight: bold;
-                    margin-bottom: 20px;
-                }
-
-                h1 {
-                    font-size: 34px;
-                    margin-bottom: 12px;
-                    color: #0f172a;
-                }
-
-                p {
-                    font-size: 18px;
-                    line-height: 1.6;
+                    letter-spacing: 0.4px;
                     margin-bottom: 24px;
                 }
 
+                h1 {
+                    font-size: 38px;
+                    margin: 0 0 28px 0;
+                    color: #0f172a;
+                    line-height: 1.2;
+                }
+
                 .info {
-                    background: #f8fafc;
-                    border-left: 5px solid #0284c7;
-                    padding: 16px;
-                    border-radius: 10px;
+                    background: linear-gradient(135deg, #eff6ff, #dbeafe);
+                    border: 1px solid #bfdbfe;
+                    padding: 22px;
+                    border-radius: 16px;
                     text-align: center;
-                    font-size: 16px;
+                    margin-top: 10px;
+                }
+
+                .course {
+                    color: #1e3a8a;
+                    font-size: 22px;
+                    font-weight: 800;
+                    margin-bottom: 6px;
+                }
+
+                .university {
+                    color: #1d4ed8;
+                    font-size: 18px;
+                    font-weight: 600;
                 }
 
                 .footer {
-                    margin-top: 25px;
+                    margin-top: 28px;
                     font-size: 14px;
                     color: #64748b;
                 }
@@ -78,14 +88,9 @@ app.get("/", (req, res) => {
 
                 <h1>Aplicación funcionando correctamente</h1>
 
-                <p>
-                    Esta aplicación Node.js se está ejecutando dentro de un contenedor Docker.
-                    El entorno fue construido a partir de una imagen Docker y publicado mediante el puerto 3000.
-                </p>
-
                 <div class="info">
-                    <strong>Fundamentos de Ingeniería de Software</strong><br>
-                    PUJ
+                    <div class="course">Fundamentos de Ingeniería de Software</div>
+                    <div class="university">PUJ</div>
                 </div>
 
                 <div class="footer">
