@@ -61,8 +61,8 @@ app.get("/", (req, res) => {
                     border-left: 5px solid #0284c7;
                     padding: 16px;
                     border-radius: 10px;
-                    text-align: left;
-                    font-size: 15px;
+                    text-align: center;
+                    font-size: 16px;
                 }
 
                 .footer {
@@ -80,7 +80,7 @@ app.get("/", (req, res) => {
 
                 <p>
                     Esta aplicación Node.js se está ejecutando dentro de un contenedor Docker.
-                    El puerto del contenedor fue publicado correctamente hacia el equipo local.
+                    El entorno fue construido a partir de una imagen Docker y publicado mediante el puerto 3000.
                 </p>
 
                 <div class="info">
