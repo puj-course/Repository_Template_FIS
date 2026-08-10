@@ -32,52 +32,88 @@ Breve descripción del sistema de software, el problema que busca solucionar y e
 ## Estructura del Proyecto
 ```text
 project-name/
-├── .github/
-│   ├── ISSUE_TEMPLATE/
-│   │   ├── bug_report.md
-│   │   ├── feature_request.md
-│   ├── PULL_REQUEST_TEMPLATE.md
-│   └── workflows/
-│       ├── ci.yml
-│       └── cd.yml
+├── app/
+│   ├── index.js
+│   │   └── Punto de entrada principal de la aplicación.
+│   ├── package.json
+│   │   └── Define las dependencias, scripts y configuración del proyecto.
+│   ├── routes/
+│   │   ├── index.js
+│   │   └── Define las rutas o endpoints principales de la aplicación.
+│   ├── controllers/
+│   │   ├── userController.js
+│   │   └── Contiene la lógica encargada de procesar las solicitudes.
+│   └── services/
+│       ├── userService.js
+│       └── Contiene la lógica de negocio y servicios reutilizables.
+│
 ├── conf/
-│   ├── config.yaml
-│   └── settings.json
+│   ├── config.json
+│   │   └── Contiene parámetros generales de configuración.
+│   ├── database.js
+│   │   └── Configura la conexión con la base de datos.
+│   └── environment.example
+│       └── Ejemplo de las variables de entorno necesarias para ejecutar el proyecto.
+│
 ├── docs/
-│   ├── api/
-│   ├── architecture/
-│   └── user_guide/
-├── jupyter/
-│   ├── notebooks/
-│   │   ├── exploration.ipynb
-│   │   └── analysis.ipynb
-│   └── datasets/
-│       ├── data1.csv
-│       └── data2.csv
+│   ├── architecture.md
+│   │   └── Describe la arquitectura general del sistema.
+│   ├── api.md
+│   │   └── Documenta los endpoints, parámetros y respuestas de la API.
+│   ├── installation.md
+│   │   └── Explica cómo instalar y configurar el proyecto.
+│   └── user_guide.md
+│       └── Guía básica para el uso de la aplicación.
+│
 ├── scripts/
 │   ├── setup.sh
-│   ├── deploy.sh
-│   └── test.sh
+│   │   └── Automatiza la instalación y configuración inicial del proyecto.
+│   ├── start.sh
+│   │   └── Permite iniciar la aplicación.
+│   ├── test.sh
+│   │   └── Ejecuta las pruebas automatizadas.
+│   └── deploy.sh
+│       └── Automatiza tareas relacionadas con el despliegue.
+│
 ├── src/
-│   ├── main/
-│   │   ├── java/ (o python/, etc. según el lenguaje)
-│   │   └── resources/
-│   ├── test/
-│   │   ├── java/ (o python/, etc. según el lenguaje)
-│   │   └── resources/
+│   ├── models/
+│   │   ├── user.js
+│   │   └── Define las estructuras o modelos de datos del sistema.
+│   ├── utils/
+│   │   ├── helpers.js
+│   │   └── Contiene funciones auxiliares reutilizables.
+│   ├── middleware/
+│   │   ├── auth.js
+│   │   └── Contiene funciones que se ejecutan antes o después de una solicitud.
+│   └── tests/
+│       ├── user.test.js
+│       └── Contiene pruebas unitarias o de integración del proyecto.
+│
 ├── temp/
-│   ├── temp_file.txt
-│   └── temp_data/
-│       ├── temp1.tmp
-│       └── temp2.tmp
-├── .gitignore
-├── README.md
-├── LICENSE
-├── CHANGELOG.md
+│   ├── .gitkeep
+│   │   └── Permite conservar la carpeta vacía dentro del repositorio.
+│   ├── example.tmp
+│   │   └── Ejemplo de archivo temporal generado durante la ejecución.
+│   └── uploads/
+│       └── Carpeta destinada a almacenar archivos temporales cargados por usuarios.
+│
+├── BOILERPLATE_template.md
+│   └── Documento que explica la estructura base y cómo utilizar este boilerplate.
+│
 ├── CONTRIBUTING.md
-├── Dockerfile
-├── docker-compose.yml
-└── Makefile
+│   └── Define las normas y recomendaciones para contribuir al proyecto.
+│
+├── LICENSE
+│   └── Especifica la licencia bajo la cual se distribuye el proyecto.
+│
+├── README.md
+│   └── Documento principal con la descripción, instalación, uso y características del proyecto.
+│
+├── .gitignore
+│   └── Define los archivos y carpetas que Git no debe versionar.
+│
+└── .env.example
+    └── Plantilla de las variables de entorno necesarias para ejecutar la aplicación.
 ```
 
 ---
